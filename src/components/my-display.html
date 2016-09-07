@@ -9,23 +9,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="stateless-display.html">
 
 <dom-module id="my-display">
 
   <template>
 
-    <style include="shared-styles">
-      :host {
-        display: block;
-        padding: 10px;
-        color:white;
-        background-color: rgb(170,100,40);
-      }
-    </style>
-
-    <div class="display">
-      [[text]]
-    </div>
+    <stateless-display display-text=[[text]]></stateless-display>
 
   </template>
 
@@ -39,6 +29,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           linkState: 'state.text',
         }
       },
+
       behaviors: [StateReceiverBehavior]
 
     });
