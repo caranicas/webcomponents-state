@@ -1,3 +1,14 @@
+Investigating the state management in the this medium article. 
+
+https://medium.com/@dominicglenn/managing-state-in-larger-polymer-apps-96062f944d44#.4c2yb9m7m
+
+
+
+#
+#
+#
+#
+#
 # Polymer App Toolbox - Starter Kit
 
 [![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
