@@ -1,0 +1,15 @@
+
+<script>
+  Polymer({
+    is: 'state-manager',
+    properties: {
+      state: {
+        type: Object,
+        value: {
+          text: 'initial state value'
+        }
+      }
+    },
+    behaviors: [StateProviderBehavior]
+ });
+</script>
