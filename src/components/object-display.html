@@ -9,14 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="shared-styles.html">
-<link rel="import" href="components/my-display.html">
-<link rel="import" href="components/second-display.html">
-<link rel="import" href="components/object-display.html">
 
-<link rel="import" href="components/my-modifier.html">
-
-<dom-module id="my-view1">
+<dom-module id="object-display">
 
   <template>
 
@@ -24,18 +18,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       :host {
         display: block;
         padding: 10px;
+        color:white;
+        background-color: rgb(50,50,60);
+        margin-bottom: 30px;
       }
     </style>
 
-    <div class="card">
-      <div class="circle">1</div>
-      <h1>View One</h1>
 
-      <my-modifier></my-modifier>
-      <my-display></my-display>
-      <second-display></second-display>
-      <object-display></object-display>
-
+    <div class="display">
+      [[text]]
     </div>
 
   </template>
@@ -44,9 +35,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     Polymer({
 
-      is: 'my-view1'
+      is: 'object-display',
+      properties: {
+        text: {
+          linkState: 'state.myobj.mytext',
+        }
+      },
+
+      behaviors: [StateReceiverBehavior]
 
     });
+
 
   </script>
 
