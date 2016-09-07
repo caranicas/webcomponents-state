@@ -1,0 +1,43 @@
+<!--
+A "stateless" not entirely sure what that means yet.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="stateless-display">
+
+  <template>
+
+  <style include="shared-styles">
+    :host {
+      display: block;
+      padding: 10px;
+      color:white;
+      background-color: rgb(200,100,100);
+      margin-bottom: 30px;
+    }
+  </style>
+
+    <div class="display">
+      [[displayText]]
+    </div>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'stateless-display',
+      properties: {
+        displayText: {
+          value:'default'
+        }
+      }
+
+    });
+
+
+  </script>
+
+</dom-module>
